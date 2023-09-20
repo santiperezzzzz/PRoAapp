@@ -1,0 +1,1025 @@
+<GridDays@ScrollView>:
+    GridLayout:
+        cols: 1
+        size_hint_y: None
+        height: self.minimum_height
+        Label:
+            id: mainMenu
+            size_hint: 1,None
+            height: 30
+            text: "Horario 2023 PRoA".upper() + " - 5to Año"
+            color: 43, 43, 49
+            markup: True
+            canvas.before:
+                Color:
+                    rgb: 98/255, 150/255, 209/255
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            size_hint_x: 1
+        Button:
+            size_hint: 1, None
+            height: 100
+            text: "Lunes"
+            size_hint_x: 1
+            on_release:
+                app.root.current = 'grid_monday'
+
+        Button:
+            size_hint: 1, None
+            height: 100
+            text: "Martes"
+            size_hint_x: 1
+            on_release:
+                app.root.current = 'grid_tuesday'
+
+        Button:
+            size_hint: 1, None
+            height: 100
+            text: "Miércoles"
+            size_hint_x: 1
+            on_release:
+                app.root.current = 'grid_wednesday'
+
+        Button:
+            size_hint: 1, None
+            height: 100
+            text: "Jueves"
+            size_hint_x: 1
+            on_release:
+                app.root.current = 'grid_thursday'
+
+        Button:
+            size_hint: 1, None
+            height: 100
+            text: "Viernes"
+            size_hint_x: 1
+            on_release:
+                app.root.current = 'grid_friday'
+        Label:
+            size_hint: 1,None
+            height: 30
+            text: ""
+            color: 0,0,0,
+            markup: True
+            canvas.before:
+                Color:
+                    rgb: 0/255, 0/255, 0/255
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            size_hint_x: 1
+        Button:
+            size_hint: 1,None
+            text: "Salir"
+            height: 45
+            color: 98/255, 150/255, 209/255, 1
+            size_hint_x: None
+            width: 120
+            on_release:
+                app.root.current = 'app.stop()'
+        Button:
+            size_hint: 1,None
+            height: 45
+            text: ""
+            size_hint: 1,None
+            height: 30
+            background_color: 0, 0, 0
+
+<GridMonday@ScrollView>:
+    GridLayout:
+        cols: 2
+        size_hint_y: None
+        height: self.minimum_height
+        Label:
+            id:monday
+            size_hint: 1,None
+            height: 30
+            text: "Lunes".upper()
+            color: 43, 43, 49
+            markup: True
+            canvas.before:
+                Color:
+                    rgb: 98/255, 150/255, 209/255
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            size_hint_x: 1
+        Button:
+            size_hint: 0,None
+            height: 30
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 0, 0, 0
+        
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "TUTORÍA Lengua"
+        Button:
+            size_hint: 0,None
+            height: 75
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "7:40 a 8:20"
+        Button:
+            size_hint: 0.25,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Lengua"
+        Button:
+            size_hint: 0,None
+            height: 75
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "8:20 a 9:50"
+        Button:
+            size_hint: 0.25,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Inglés"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "10:00 a 11:20"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Ciudadanía y participación"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "11:20 a 13:10"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Ciencias Sociales Geografía"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "13:10 a 13:50"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Club de ciancias"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "14:00 a 15:20"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Educación Física"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "15:20 a 16:40"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 45
+            text: ""
+            size_hint: 1,None
+            height: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            text: "<<"
+            height: 45
+            color: 98/255, 150/255, 209/255, 1
+            size_hint_x: None
+            width: 30
+            on_release:
+                app.root.current = 'grid_days'
+
+<GridTuesday@ScrollView>:
+    GridLayout:
+        cols: 2
+        size_hint_y: None
+        height: self.minimum_height
+        Label:
+            id:tuesday
+            size_hint: 1,None
+            height: 30
+            text: "Martes".upper()
+            color: 43, 43, 49
+            markup: True
+            canvas.before:
+                Color:
+                    rgb: 98/255, 150/255, 209/255
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            size_hint_x: 1
+        Button:
+            size_hint: 0,None
+            height: 30
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "TUTORÍA Biología"
+        Button:
+            size_hint: 0,None
+            height: 75
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "7:40 a 8:20"
+        Button:
+            size_hint: 0.25,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Taller de Inglés"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "8:30 a 9:50"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Ciencias Naturales Física"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "10:00 a 10:40"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Educación Tecnológica"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "10:40 a 12:00"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Ciencias Sociales Geografía"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "12:30 a 13:50"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Club de deportes"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "14:00 a 15:20"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: ""
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:""
+            size_hint_x: None
+            width: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 45
+            text: ""
+            size_hint: 1,None
+            height: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            text: "<<"
+            height: 45
+            color: 98/255, 150/255, 209/255, 1
+            size_hint_x: None
+            width: 30
+            on_release:
+                app.root.current = 'grid_days'
+  
+<GridWednesday@ScrollView>:
+    GridLayout:
+        cols: 2
+        size_hint_y: None
+        height: self.minimum_height
+        Label:
+            id:wednesday
+            size_hint: 1,None
+            height: 30
+            text: "Miércoles".upper()
+            color: 43, 43, 49
+            markup: True
+            canvas.before:
+                Color:
+                    rgb: 98/255, 150/255, 209/255
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            size_hint_x: 1
+        Button:
+            size_hint: 0,None
+            height: 30
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "TUTORÍA Matemática"
+        Button:
+            size_hint: 0,None
+            height: 75
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "7:40 a 8:20"
+        Button:
+            size_hint: 0.25,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Matemática"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "8:30 a 9:50"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Educación Artística"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "10:00 a 12:00"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Ciencias Naturales Biología"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "12:30 a 14:40"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Ciencias Naturales Física"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "14:40 a 16:10"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Educación Física"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "16:10 a 16:50"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: ""
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:""
+            size_hint_x: None
+            width: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 45
+            text: ""
+            size_hint: 1,None
+            height: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            text: "<<"
+            height: 45
+            color: 98/255, 150/255, 209/255, 1
+            size_hint_x: None
+            width: 30
+            on_release:
+                app.root.current = 'grid_days'
+
+<GridThursday@ScrollView>:
+    GridLayout:
+        cols: 2
+        size_hint_y: None
+        height: self.minimum_height
+        Label:
+            id:thursday
+            size_hint: 1,None
+            height: 30
+            text: "Jueves".upper()
+            color: 43, 43, 49
+            markup: True
+            canvas.before:
+                Color:
+                    rgb: 98/255, 150/255, 209/255
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            size_hint_x: 1
+        Button:
+            size_hint: 0,None
+            height: 30
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "TUTORÍA Inglés"
+        Button:
+            size_hint: 0,None
+            height: 75
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "7:40 a 8:20"
+        Button:
+            size_hint: 0.25,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Inglés"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "8:30 a 9:10"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Ciudadania y Participación"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "9:10 a 9:50"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Entornos digitales"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "10:00 a 11:20"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Ciencias Sociales Geografía"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "11:20 a 13:10"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Club de arte"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "13:10 a 14:40"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "TUTORÍA Ciencias Sociales Geografía"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "14:40 a 15:20"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: ""
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:""
+            size_hint_x: None
+            width: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 45
+            text: ""
+            size_hint: 1,None
+            height: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            text: "<<"
+            height: 45
+            color: 98/255, 150/255, 209/255, 1
+            size_hint_x: None
+            width: 30
+            on_release:
+                app.root.current = 'grid_days'
+
+<GridFriday@ScrollView>:
+    GridLayout:
+        cols: 2
+        size_hint_y: None
+        height: self.minimum_height
+        Label:
+            id:friday
+            size_hint: 1,None
+            height: 30
+            text: "Viernes".upper()
+            color: 43, 43, 49
+            markup: True
+            canvas.before:
+                Color:
+                    rgb: 98/255, 150/255, 209/255
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            size_hint_x: 1
+        Button:
+            size_hint: 0,None
+            height: 30
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Lengua y Literatura"
+        Button:
+            size_hint: 0,None
+            height: 75
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "7:40 a 9:50"
+        Button:
+            size_hint: 0.25,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Matemática"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "10:00 a 12:00"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Educación Tecnológica"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "12:30 a 13:50"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "Sistemas Operativos"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "14:00 a 15:20"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+        Button:
+            size_hint: 1,None
+            height: 60
+            text: "TUTORÍA Ciencias Naturales Física"
+        Button:
+            size_hint: 1,None
+            height: 70
+            text: ""
+            size_hint_x: None
+            width: 30
+            background_color: 106, 118, 159
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: "15:30 a 16:10"
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:"+"
+            size_hint_x: None
+            width: 30
+
+        Button:
+            size_hint: 1,None
+            height: 30
+            text: ""
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 30
+            text:""
+            size_hint_x: None
+            width: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            height: 45
+            text: ""
+            size_hint: 1,None
+            height: 30
+            background_color: 0, 0, 0
+        Button:
+            size_hint: 1,None
+            text: "<<"
+            height: 45
+            color: 98/255, 150/255, 209/255, 1
+            size_hint_x: None
+            width: 30
+            on_release:
+                app.root.current = 'grid_days'
+ScreenManager:
+    id: sm
+
+    Screen:
+        name: 'grid_days'
+        GridDays
+
+    Screen:
+        name: 'grid_monday'
+        GridMonday
+
+    Screen:
+        name: 'grid_tuesday'
+
+    Screen:
+        name: 'grid_wednesday'
+
+    Screen:
+        name: 'grid_thursday'
+
+    Screen:
+        name: 'grid_friday'
